@@ -1,0 +1,29 @@
+#!/usr/bin/env bash
+
+# saurabhy20 - Prince-Music-Player
+
+# Copyright (C) 2022-2023 
+
+#
+
+# This file is a part of < https://github.com/saurabhy20/Prince-Music-Player/ >
+
+# PLease read the GNU Affero General Public License in <https://www.github.com/saurabhy20/Prince-Music-Player/LICENSE/>.
+
+if [ -d "resources" ]
+
+then
+
+    echo "Current directory Identified.."
+
+else
+
+    apt install git -y
+
+    git clone https://github.com/saurabhy20/Prince-Music-Player
+
+    cd Prince-Music-Player
+
+fi
+
+bash resources/startup/termux.sh
