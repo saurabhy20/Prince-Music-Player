@@ -19,7 +19,7 @@
             "required": true
         },
         "STRING_SESSION": {
-            "description": "enter pyrogram string get it from @venomstring_bot",
+            "description": "enter pyrogram string get it from @SessionStringGeneratorZBot",
             "required": true
         }
     },
