@@ -30,4 +30,58 @@ async def _human_time_duration(seconds):
     
     
     
+@Client.on_message(command("start") & filters.private & ~filters.edited)
+async def start_(client: Client, message: Message):
+    await message.reply_photo(
+        photo=f"https://te.legra.ph/file/c48e2a86f35a4a56c44c6.jpg",
+        caption=f"""**━━━━━━━━━━━━━━━━━━━━━━━━
+💥 ʜᴇʟʟᴏ, ɪ ᴀᴍ PRINCE MUSIC 𝙁𝙪𝙘𝙠𝙚𝙧 
+ʙᴏᴛ ғᴏʀ ᴛᴇʟᴇɢʀᴀᴍ ɢʀᴏᴜᴘs ...
+...
+━━━━━━━━━━━━━━━━━━━━━━━━**""",
+    reply_markup=InlineKeyboardMarkup(
+            [
+                [
+                    InlineKeyboardButton(
+                        "➕ ❰ repo ❱ ➕", url=f"https://github.com/saurabhy20/Prince-Music-Player"),
+                        InlineKeyboardButton("• Cʜᴀɴɴᴇʟ", url=f"https://t.me/PrinceXOT"),
+                      InlineKeyboardButton("• Group", url=f"https://t.me/PrinceVcSupport"),
+                  ],[
+                      InlineKeyboardButton("CREATER", url=f"https://t.me/DarkloverzS")
+                ]
+                
+           ]
+        ),
+    )
     
+    
+@Client.on_message(commandpro(["/start", "/alive", "prince"]) & filters.group & ~filters.edited)
+async def start(client: Client, message: Message):
+    await message.reply_photo(
+        photo=f"https://te.legra.ph/file/a48cfa7fcd40d1d2aecf8.jpg",
+        caption=f"""""",
+        reply_markup=InlineKeyboardMarkup(
+            [
+                [
+                    InlineKeyboardButton(
+                        "💥 ᴊᴏɪɴ ʜᴇʀᴇ ᴀɴᴅ sᴜᴘᴘᴏʀᴛ 💞", url=f"https://t.me/unlimited_mstii")
+                ]
+            ]
+        ),
+    )
+
+
+@Client.on_message(commandpro(["repo", "#repo", "@repo", "/repo", "source"]) & filters.group & ~filters.edited)
+async def help(client: Client, message: Message):
+    await message.reply_photo(
+        photo=f"https://te.legra.ph/file/a48cfa7fcd40d1d2aecf8.jpg",
+        caption=f"""""",
+        reply_markup=InlineKeyboardMarkup(
+            [
+                [
+                    InlineKeyboardButton(
+                        "💥 ᴄʟɪᴄᴋ ᴍᴇ ᴛᴏ ɢᴇᴛ ʀᴇᴘᴏ 💞", url=f"https://github.com/saurabhy20/Prince-Music-Player")
+                ]
+            ]
+        ),
+    )
